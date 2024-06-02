@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-option {
+  place-content: center;
+
+  .back-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "fname lname"
+    "email email"
+    "msg msg"
+    "btn btn";
+  position: relative;
+  padding: 2rem;
+  backdrop-filter: blur(20%);
+  border-radius: 1rem;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+
+  .bubble-1 {
+    width: 24rem;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    background-color: aqua;
+    border-radius: 50%;
+  }
+
+  .bubble-2 {
+    width: 24rem;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 20%;
+    left: -50%;
+    background-color: wheat;
+    border-radius: 50%;
+  }
+
+  .bubble-3 {
+    width: 50rem;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    background-color: orange;
+    border-radius: 50%;
+  }
+}
